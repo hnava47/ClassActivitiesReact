@@ -1,19 +1,40 @@
-import HelloWorld from './components/HelloWorld';
-import JsxVariables from './components/JsxVariables';
-// JSX = JavaScript and XML
-// A functional component
-// it's a function that just returns some html
+// import HelloWorld from './components/HelloWorld';
+// import JsxVariables from "./components/JsxVariables";
+// import Greeter from './components/Greeter';
 
-// As a rule, if your component returns HTML, it has to start with a capital letter
+import {
+  HelloWorld,
+  JsxVariables,
+  Greeter
+} from './components';
 
-// In react components that we create become HTML elements that will return
-// the html elements that our components return
-
-export const App  = () => {
+const App = () => {
   return (
     <>
       <HelloWorld/>
       <JsxVariables/>
+      <Greeter
+        name='Hector'
+        age={30}
+        isHungry
+        isSleep={false}
+        favoriteCryptos={
+          [
+            'XRP',
+            'XLM',
+            'XDC'
+          ]
+        }
+        pcSpecs = {
+          {
+            gpu: '3090',
+            cpu: 'i11'
+          }
+        }
+        myFn={()=> console.log('We out here breh')}
+      />
+      <Greeter name='Jen'/>
+      <Greeter name='Noah'/>
     </>
   );
 }

@@ -6,8 +6,8 @@ import App from './App';
 // the 1st one is the component that you want to render
 // the 2nd one is the html element you want to render on
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>,
+  </>,
   document.getElementById('root')
 );

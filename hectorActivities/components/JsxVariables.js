@@ -1,4 +1,4 @@
-export const JsxVariable = () => {
+export const JsxVariables = () => {
     const firstName = 'Emmanuel';
     const age = 31;
     const num = 5;
@@ -12,4 +12,4 @@ export const JsxVariable = () => {
     );
 };
 
-export default JsxVariable;
+export default JsxVariables;
