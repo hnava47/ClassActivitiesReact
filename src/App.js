@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import HelloWorld from './components/HelloWorld';
+// JSX = JavaScript and XML
+// A functional component
+// it's a function that just returns some html
 
-function App() {
+// As a rule, if your component returns HTML, it has to start with a capital letter
+
+// In react components that we create become HTML elements that will return
+// the html elements that our components return
+
+export const App  = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HelloWorld/>
+      <HelloWorld/>
+    </>
   );
 }
 
