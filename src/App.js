@@ -5,12 +5,18 @@
 import {
   HelloWorld,
   JsxVariables,
-  Greeter
+  Greeter,
+  List
 } from './components';
 
 const App = () => {
+  const students = ['Stephen', 'Matt', 'Rhys', 'Ian', 'Stephen'];
+  const favoriteCryptos = ['BTC', 'ATOM', 'ETH']
+
   return (
     <>
+      <List items={students}/>
+      <List items={favoriteCryptos}/>
       <HelloWorld/>
       <JsxVariables/>
       <Greeter
